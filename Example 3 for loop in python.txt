@@ -1,0 +1,19 @@
+# practice for loop
+# ask user name and count each character
+# "Akshat Sharma"
+# A : 1
+# k : 1
+# s : 1
+# h : 2
+# a : 2
+# t : 1
+# S : 1
+# r : 1
+# m : 1
+
+name = input("enter your name : ")
+temp = ""
+for i in range(len(name)):
+    if name[i] not in temp:
+        print(f"{name[i]}: {name.count(name[i])}")
+        temp += name[i]
